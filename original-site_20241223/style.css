@@ -1,0 +1,442 @@
+#body {
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+  font-family: "Shippori Mincho", "Zen Old Mincho", serif;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ナビレイアウト */
+.nav-pc {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.nav-ul {
+  display: flex;
+  padding-left: 0px;
+}
+
+.nav-content {
+  list-style: none;
+}
+.nav-icon {
+  text-decoration: none;
+  margin-left: 50px;
+  color: black;
+}
+
+.nav-icon:hover {
+  text-decoration: underline;
+}
+
+/* メイン */
+/* .main-image {
+  position: relative;
+  width: 100%;
+} */
+
+/* テキスト */
+.main-text {
+  /* position: absolute; */
+  /* top: 300px;
+  left: 300px; */
+  color: white;
+  font-size: min(20px, 2vw);
+  line-height: 35px;
+  letter-spacing: 7px;
+}
+
+.main-name {
+  /* position: absolute;
+  top: 270px;
+  left: 580px; */
+  font-family: "Cardo", "Zen Old Mincho", serif;
+  font-size: min(55px, 5.5vw);
+  font-weight: bold;
+  color: white;
+  margin-top: 1.5em;
+}
+
+/* アバウト */
+.about {
+  background-color: #e9e3d0;
+}
+
+.about-title {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding-top: 70px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Cardo", "Zen Old Mincho", serif;
+}
+
+.about-text {
+  position: relative;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding: 40px 0 40px 110px;
+}
+
+/* 写真レイアウト（横並びにする） */
+.about-layout {
+  display: flex;
+  /* about-image の位置指定のため下記を追記 */
+  position: relative;
+}
+
+.about-image {
+  position: absolute;
+  padding: 0 0 0 750px;
+  /* about-layout を基準にtop等で位置指定 */
+  top: -75px;
+}
+
+/* 写真大きさ */
+.about-1 {
+  width: 100px;
+}
+
+.about-2 {
+  width: 150px;
+}
+
+/* メニュー */
+.menu {
+  background-color: #e9e3d0;
+}
+
+.menu-title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 70px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Cardo", "Zen Old Mincho", serif;
+}
+
+/* レイアウト（横並びにする） */
+.menu-layout {
+  display: flex;
+  margin-top: 40px;
+}
+
+.menu-left {
+  width: 50%;
+  margin: 0 0 30px 150px;
+}
+
+.menu-right {
+  width: 50%;
+  margin-right: 10px;
+}
+
+/* 料理写真レイアウト */
+.dish {
+  display: flex;
+  padding-top: 50px;
+}
+
+.dish-image {
+  width: 180px;
+}
+
+/* テキスト */
+.dish-title {
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 10px 0 3px 0;
+}
+
+.dish-menu {
+  line-height: 35px;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+/* moreボタン */
+.more {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+/* アクセス */
+.access {
+  background-color: #e9e3d0;
+}
+
+.access-title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 70px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Cardo", "Zen Old Mincho", serif;
+}
+
+/* レイアウト（横並びにする） */
+.access-layout {
+  display: flex;
+  margin-top: 40px;
+}
+
+/* マップ */
+.map {
+  width: 50%;
+  position: relative;
+  margin: 0 0 70px 150px;
+  padding-top: 25px;
+}
+
+/* テキスト */
+.access-text {
+  width: 50%;
+  margin-right: 10px;
+  padding-top: 60px;
+  line-height: 35px;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+/* フッター */
+/* 
+子要素をposition: absolute;で位置していのため追記
+background-image以下で背景画像・位置・サイズを指定
+paddingで上下の幅を調整
+flexboxでロゴ他の中央寄せ
+*/
+.footer {
+  padding: 150px 0;
+  position: relative;
+  background-image: url(image/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+/* 背景をfooterで指定したため削除 */
+/* .footer-image {
+  width: 100%;
+  position: relative;
+} */
+.footer-text-wrap {
+  width: 300px;
+  margin: 25px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text-wrap ul {
+  padding: 0;
+}
+/* 
+ロゴや営業時間等を個々で位置していを解除
+*/
+/* ロゴ */
+/* ロゴの位置とサイズ調整 */
+.footer-logo-layout {
+  display: block;
+  width: 167px;
+  margin: 0 auto;
+}
+.footer-logo {
+  /* position: absolute; */
+  /* top: 2650px;
+  left: 570px; */
+  display: block;
+  width: 100%;
+}
+
+/* 左側テキスト */
+.footer-text {
+  /* position: absolute; */
+  /* display: flex; */
+  /* top: 2760px;
+  left: 480px; */
+  line-height: 30px;
+}
+
+/* 右側テキスト */
+.footer-text-2 {
+  /* position: absolute; */
+  display: flex;
+  /* top: 2760px;
+  left: 650px; */
+  line-height: 30px;
+}
+
+/* テキストのレイアウト */
+.footer-section {
+  list-style: none;
+  line-height: 35px;
+}
+
+.insta {
+  width: 35%;
+}
+
+.face {
+  width: 30%;
+  padding-left: 12px;
+  padding-bottom: 5px;
+}
+
+/* ナビ */
+.nav-pc-footer {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.nav-ul-footer {
+  display: flex;
+  padding-left: 0px;
+  /* position: absolute;
+  top: 2950px;
+  left: 430px; */
+}
+
+/* メニューページ */
+/* ヘッダー */
+.header2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ナビレイアウト */
+.nav-pc {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.nav-ul {
+  display: flex;
+  padding-left: 0px;
+}
+
+.nav-content {
+  list-style: none;
+}
+.nav-icon {
+  text-decoration: none;
+  margin-left: 50px;
+  color: black;
+}
+/* 
+フッターテキストリンクを中央で揃えるため、aboutのみmarginを0指定
+ */
+.nav-content:first-child .nav-icon {
+  margin: 0;
+}
+
+.nav-icon:hover {
+  text-decoration: underline;
+}
+
+/* メイン */
+.main {
+  width: 100%;
+  height: 590px;
+  background-image: url(image/main.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* .menumain-image {
+  position: relative;
+  width: 100%;
+} */
+
+/* main-titleのみで位置指定 */
+.main-title {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 200px;
+  left: min(250px, 19vw);
+}
+.menumain {
+  background-color: #e9e3d0;
+}
+.menumain-mv {
+  width: 100%;
+  height: 477px;
+  position: relative;
+  background-image: url(image/menu-top.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.menumain-mv__txt {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  top: 150px;
+  left: min(150px, 10vw);
+}
+/* .menumain-titleからクラス名変更 */
+.menumain-mv__title {
+  /* position: absolute;
+    top: 190px;
+    left: 180px; */
+  font-family: "Cardo", "Zen Old Mincho", serif;
+  /* font-size: 55px; */
+  font-size: min(55px, 5vw);
+  font-weight: bold;
+  margin: 0;
+}
+/* .menumain-textからクラス名変更 */
+.menumain-mv__text {
+  /* position: absolute;
+    top: 320px;
+    left: 180px; */
+  /* font-size: 13px; */
+  font-size: min(13px, 1.2vw);
+}
+
+/* コース */
+.course {
+  text-align: center;
+  font-size: 20px;
+  margin: 80px 0 20px 0;
+}
+
+.course-image-layout {
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.course-image {
+  width: 72%;
+}
+
+/* 単品 */
+.single {
+  text-align: center;
+  font-size: 20px;
+  margin: 50px 0 10px 0;
+}
+
+.dish2 {
+  display: flex;
+  padding-top: 10px;
+}
+
+.single-message {
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  font-size: 13px;
+  line-height: 20px;
+}
